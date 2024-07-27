@@ -5,16 +5,16 @@ local args = {...}
 local branch
 local repo
 local scripts = {
-    'oc/main/Run.lua',
-    'oc/main/env.example.lua',
-    'oc/main/src/Scan.lua',
-    'oc/main/src/AE2.lua',
-    'oc/main/src/Utility.lua',
-    'oc/main/src/Network.lua',
-    'oc/main/src/Queue.lua',
-    'oc/main/src/Machines.lua',
-    'oc/main/src/TPS.lua',
-    'oc/main/lib/json.lua',
+    'main/Run.lua',
+    'main/env.example.lua',
+    'main/src/Scan.lua',
+    'main/src/AE2.lua',
+    'main/src/Utility.lua',
+    'main/src/Network.lua',
+    'main/src/Queue.lua',
+    'main/src/Machines.lua',
+    'main/src/TPS.lua',
+    'main/lib/json.lua',
 }
 
 -- BRANCH
