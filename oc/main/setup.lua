@@ -28,7 +28,7 @@ end
 if #args >= 2 then
     repo = args[2]
 else
-    repo = 'https://raw.githubusercontent.com/nzbasic/GTNH-AE2-OC-GOG/'
+    repo = 'https://raw.githubusercontent.com/nzbasic/GTNH-AE2-OC-GOG/blob/'
 end
 
 local folder = "oc"
