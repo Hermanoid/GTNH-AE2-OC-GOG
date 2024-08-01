@@ -24,6 +24,7 @@ I haven't tested setting this up a second time, you will probably encounter issu
 - Inventory Controller Upgrade
 - Keyboard
 - Internet Card
+- TPS Card
 - EEPROM (Lua BIOS)
 - OpenOS Floppy Disk
 - 2 Adapter (maybe 1 is enough)

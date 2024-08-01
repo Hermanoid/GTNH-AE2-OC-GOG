@@ -57,13 +57,17 @@ end
 function getItemsInNetwork()
     local filter = getFilter()
     local items = {}
-    local all = ME.getItemsInNetwork()
 
-    for _, meV in pairs(all) do
-       for _, filterV in pairs(filter) do
-            if meV.label == filterV then
-                items[filterV] = (items[filterV] or 0) + meV.size
-            end
+    print("Filter: " .. table.concat(filter, ", "))
+
+    local filterDict = {}
+    for _, v in ipairs(filter) do
+        filterDict[v] = true
+    end
+
+    for item in ME.allItems() do
+        if filterDict[item.label] then
+            items[item.label] = item.size
         end
     end
 
