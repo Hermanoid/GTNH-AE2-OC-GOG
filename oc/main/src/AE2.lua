@@ -57,19 +57,14 @@ end
 function getItemsInNetwork()
     local filter = getFilter()
     local items = {}
-
-    print("Filter: " .. table.concat(filter, ", "))
-
-    local filterDict = {}
-    for _, v in ipairs(filter) do
-        filterDict[v] = true
-    end
-
-    for item in ME.allItems() do
-        if filterDict[item.label] then
-            items[item.label] = item.size
+    for _, item in pairs(filter) do
+        match = ME.getItemsInNetwork({name=item.name, damage=item.damage})[1]
+        if match ~= nil then
+            items[item.label] = match.size
+        else
+            print("No match for " .. item.label)
+            items[item.label] = 0
         end
     end
-
     return items
 end

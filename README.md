@@ -30,6 +30,10 @@ I haven't tested setting this up a second time, you will probably encounter issu
 - 2 Adapter (maybe 1 is enough)
 - Chest (Compressed chest is best)
 
+## AE Requirements:
+
+All crafting CPUs must have a Crafting Monitor, or their craft information cannot be read.
+
 ## Dev Setup
 
 ### Supabase:
